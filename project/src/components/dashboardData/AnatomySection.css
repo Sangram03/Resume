@@ -1,0 +1,120 @@
+.anatomy-container {
+  position: relative;
+  min-height: 320px;
+  background-color: #fed7aa; /* Tailwind's bg-orange-200 */
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+
+.anatomy-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.anatomy-body-wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.anatomy-body {
+  position: relative;
+  width: 8rem;
+  height: 16rem;
+}
+
+.body-head {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 2px solid red;
+}
+
+.body-torso {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7rem;
+  height: 10rem;
+  border-radius: 1rem;
+  border: 2px solid blue;
+}
+
+.body-leg {
+  position: absolute;
+  top: 15rem;
+  width: 2.5rem;
+  height: 2rem;
+  background-color: #475569; /* Tailwind's bg-slate-600 */
+  border-radius: 0.5rem;
+  border: 2px solid white;
+}
+
+.body-leg.left {
+  left: 0;
+}
+
+.body-leg.right {
+  right: 0;
+}
+
+.indicator-wrapper {
+  position: absolute;
+}
+
+.indicator {
+  position: relative;
+}
+
+.indicator-dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.status-healthy {
+  background-color: #22c55e; /* green-500 */
+}
+
+.status-warning {
+  background-color: #fa15ee; /* yellow-500 */
+}
+
+.status-critical {
+  background-color: #ef4444; /* red-500 */
+}
+
+.status-unknown {
+  background-color: #6b7280; /* gray-500 */
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  background: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
